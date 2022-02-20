@@ -1,13 +1,12 @@
-import Editor from "@monaco-editor/react";
+import { GlobalStyle } from './styles'
+import {Editor} from "./components";
 
 function App() {
   return (
-    <Editor
-      height="100vh"
-      width="100vh"
-      defaultLanguage="javascript"
-      defaultValue="// some comment"
-    />
+    <>
+      <GlobalStyle />
+      <Editor />
+    </>
   );
 }
 
