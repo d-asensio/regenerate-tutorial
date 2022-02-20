@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Markdown from 'react-markdown';
+import exampleMarkdown from './example.js'
 
 const Wrapper = styled.div`
   z-index: 1;
@@ -11,7 +12,7 @@ function TutorialPanel ({ className, ...rest }) {
   return (
     <Wrapper>
       <Markdown {...rest}>
-        # Hello, *world*!
+        {exampleMarkdown}
       </Markdown>
     </Wrapper>
   )
